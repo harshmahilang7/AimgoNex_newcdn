@@ -10,14 +10,18 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing - AmigoNex Real Estate Support Services</title>
-    <meta name="description" content="Flexible pricing plans for AmigoNex real estate virtual assistant services. Choose the perfect package for your business needs.">
+    <meta name="description"
+        content="Flexible pricing plans for AmigoNex real estate virtual assistant services. Choose the perfect package for your business needs.">
     <!-- Fonts -->
-    <link href="https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular" rel="stylesheet">
-    <link href="https://db.onlinewebfonts.com/c/365834cfa7beb7ca64c00476397ddc32?family=Helvetica+Neue+Medium+Extended" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular"
+        rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/365834cfa7beb7ca64c00476397ddc32?family=Helvetica+Neue+Medium+Extended"
+        rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- Styles -->
@@ -34,45 +38,57 @@
             --text-light: #6c757d;
             --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             color: var(--text-color);
             line-height: 1.6;
         }
-        
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
         }
-        
-        h1, h2, h3, h4 {
+
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Integral CF', sans-serif;
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 1rem;
         }
-        
-        h1 { font-size: 2.8rem; }
-        h2 { font-size: 2.2rem; }
-        h3 { font-size: 1.8rem; }
-        
+
+        h1 {
+            font-size: 2.8rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
         p {
             margin-bottom: 1.5rem;
             font-size: 1.1rem;
             color: var(--text-light);
         }
-        
+
         /* Button Styles */
-        button, .hero-button {
+        button,
+        .hero-button {
             background: var(--gradient);
             color: white;
             border: none;
@@ -84,13 +100,36 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(64, 175, 62, 0.3);
         }
-        
-        button:hover, .hero-button:hover {
+
+        button:hover,
+        .hero-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(64, 175, 62, 0.4);
-            background: var(--secondary-color);
         }
-        
+
+        .pri-btn {
+            background: white;
+            color: #339550;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(64, 175, 62, 0.3);
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 150px;
+        }
+
+        .pri-btn:hover {
+            color: white;
+            background-color: #339550;
+            border: 2px solid white;
+        }
+
+
         /* Header Styles */
         .header {
             background-color: white;
@@ -101,22 +140,22 @@
             z-index: 1000;
             padding: 15px 0;
         }
-        
+
         .header .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .header nav ul {
             display: flex;
             list-style: none;
         }
-        
+
         .header nav ul li {
             margin: 0 15px;
         }
-        
+
         .header nav ul li a {
             text-decoration: none;
             color: var(--text-color);
@@ -124,12 +163,12 @@
             transition: color 0.3s;
             position: relative;
         }
-        
-        .header nav ul li a:hover, 
+
+        .header nav ul li a:hover,
         .header nav ul li a.active {
             color: var(--primary-color);
         }
-        
+
         .header nav ul li a.active:after {
             content: '';
             position: absolute;
@@ -139,20 +178,20 @@
             height: 2px;
             background: var(--gradient);
         }
-        
+
         /* Pricing Hero Section */
         .pricing-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('public/pricing-hero-bg.jpg') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/hero\ section/pricing.jpg') no-repeat center center/cover;
             color: white;
             padding: 180px 0 100px;
             text-align: center;
         }
-        
+
         .pricing-hero .hero-content {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .section-tag {
             display: inline-flex;
             align-items: center;
@@ -165,12 +204,12 @@
             margin-bottom: 20px;
             color: white;
         }
-        
+
         .section-tag img {
             margin-right: 10px;
             width: 16px;
         }
-        
+
         .pricing-hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
@@ -178,14 +217,14 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        
+
         .pricing-hero p {
             color: rgba(255, 255, 255, 0.8);
             font-size: 1.2rem;
             max-width: 700px;
             margin: 0 auto 30px;
         }
-        
+
         /* Pricing Toggle */
         .pricing-toggle {
             display: flex;
@@ -193,26 +232,26 @@
             align-items: center;
             margin: 40px 0;
         }
-        
+
         .toggle-label {
             margin: 0 15px;
             font-weight: 600;
             color: var(--text-color);
         }
-        
+
         .toggle-switch {
             position: relative;
             display: inline-block;
             width: 60px;
             height: 34px;
         }
-        
+
         .toggle-switch input {
             opacity: 0;
             width: 0;
             height: 0;
         }
-        
+
         .slider {
             position: absolute;
             cursor: pointer;
@@ -224,7 +263,7 @@
             transition: .4s;
             border-radius: 34px;
         }
-        
+
         .slider:before {
             position: absolute;
             content: "";
@@ -236,27 +275,27 @@
             transition: .4s;
             border-radius: 50%;
         }
-        
-        input:checked + .slider {
+
+        input:checked+.slider {
             background: var(--gradient);
         }
-        
-        input:checked + .slider:before {
+
+        input:checked+.slider:before {
             transform: translateX(26px);
         }
-        
+
         /* Pricing Plans Section */
         .pricing-plans {
             padding: 100px 0;
             background-color: #f9f9ff;
         }
-        
+
         .section-header {
             text-align: center;
             max-width: 700px;
             margin: 0 auto 50px;
         }
-        
+
         .secondary-section-title {
             display: inline-flex;
             align-items: center;
@@ -267,19 +306,20 @@
             letter-spacing: 1px;
             margin-bottom: 15px;
         }
-        
+
         .secondary-section-title img {
             margin-right: 10px;
             width: 16px;
         }
-        
+
         .plans-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            align-items: stretch; /* Make all cards equal height */
+            align-items: stretch;
+            /* Make all cards equal height */
         }
-        
+
         .pricing-card {
             background: white;
             border-radius: 15px;
@@ -290,18 +330,19 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            height: 100%; /* Make cards take full height */
+            height: 100%;
+            /* Make cards take full height */
         }
-        
+
         .pricing-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
         }
-        
+
         .pricing-card.popular {
             border: 2px solid var(--primary-color);
         }
-        
+
         .popular-tag {
             position: absolute;
             top: 15px;
@@ -313,42 +354,43 @@
             font-size: 0.8rem;
             font-weight: 600;
         }
-        
+
         .plan-name {
             font-size: 1.5rem;
             margin-bottom: 15px;
             color: var(--dark-color);
         }
-        
+
         .plan-price {
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 10px;
             color: var(--primary-color);
         }
-        
+
         .plan-price span {
             font-size: 1rem;
             color: var(--text-light);
         }
-        
+
         .plan-description {
             margin-bottom: 25px;
             color: var(--text-light);
         }
-        
+
         .plan-features {
             margin-bottom: 30px;
-            flex-grow: 1; /* Allow features to grow and push button down */
+            flex-grow: 1;
+            /* Allow features to grow and push button down */
         }
-        
+
         .plan-features li {
             margin-bottom: 12px;
             padding-left: 25px;
             position: relative;
             list-style: none;
         }
-        
+
         .plan-features li:before {
             content: "\f00c";
             font-family: "Font Awesome 6 Free";
@@ -357,19 +399,20 @@
             left: 0;
             color: var(--primary-color);
         }
-        
+
         .plan-button {
             width: 100%;
             text-align: center;
-            margin-top: auto; /* Push button to bottom */
+            margin-top: auto;
+            /* Push button to bottom */
         }
-        
+
         /* Features Comparison Section */
         .features-section {
             padding: 100px 0;
             background-color: white;
         }
-        
+
         .features-table {
             width: 100%;
             border-collapse: collapse;
@@ -378,14 +421,14 @@
             border-radius: 10px;
             overflow: hidden;
         }
-        
-        .features-table th, 
+
+        .features-table th,
         .features-table td {
             padding: 15px 20px;
             text-align: left;
             border-bottom: 1px solid #eee;
         }
-        
+
         .features-table th {
             font-weight: 600;
             color: white;
@@ -394,55 +437,55 @@
             font-size: 0.9rem;
             letter-spacing: 0.5px;
         }
-        
+
         .features-table tr:nth-child(even) {
             background-color: #f9f9f9;
         }
-        
+
         .features-table tr:hover {
             background-color: #f1f1f1;
         }
-        
+
         .features-table tr:last-child td {
             border-bottom: none;
         }
-        
+
         .feature-name {
             font-weight: 600;
             width: 30%;
             color: var(--dark-color);
         }
-        
+
         .feature-value {
             text-align: center;
             font-weight: 500;
         }
-        
+
         .feature-value i.fa-check {
             color: var(--primary-color);
             background: rgba(64, 175, 62, 0.1);
             padding: 5px;
             border-radius: 50%;
         }
-        
+
         .feature-value i.fa-times {
             color: #ff6b6b;
             background: rgba(255, 107, 107, 0.1);
             padding: 5px;
             border-radius: 50%;
         }
-        
+
         /* FAQ Section */
         .faq-section {
             padding: 100px 0;
             background-color: #f9f9ff;
         }
-        
+
         .faq-container {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .faq-item {
             margin-bottom: 20px;
             border-radius: 10px;
@@ -450,7 +493,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             background: white;
         }
-        
+
         .faq-question {
             padding: 20px;
             display: flex;
@@ -460,32 +503,32 @@
             font-weight: 600;
             transition: background 0.3s;
         }
-        
+
         .faq-question:hover {
             background: #f5f5ff;
         }
-        
+
         .faq-question i {
             transition: transform 0.3s;
             color: var(--primary-color);
         }
-        
+
         .faq-answer {
             padding: 0 20px;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s, padding 0.3s;
         }
-        
+
         .faq-item.active .faq-question i {
             transform: rotate(180deg);
         }
-        
+
         .faq-item.active .faq-answer {
             padding: 0 20px 20px;
             max-height: 500px;
         }
-        
+
         /* CTA Section */
         .pricing-cta {
             padding: 100px 0;
@@ -493,71 +536,71 @@
             color: white;
             text-align: center;
         }
-        
+
         .pricing-cta h2 {
             font-size: 2.5rem;
             margin-bottom: 20px;
         }
-        
+
         .pricing-cta p {
             color: rgba(255, 255, 255, 0.8);
             max-width: 600px;
             margin: 0 auto 30px;
             font-size: 1.2rem;
         }
-        
+
         /* Footer */
         .footer {
             background-color: var(--dark-color);
             color: white;
             padding: 60px 0 30px;
         }
-        
+
         .footer img {
             margin-bottom: 30px;
         }
-        
+
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 40px;
             margin-bottom: 40px;
         }
-        
+
         .footer-contact .contact-item {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
         }
-        
+
         .footer-contact i {
             margin-right: 15px;
             color: var(--primary-color);
         }
-        
+
         .footer-links ul {
             list-style: none;
         }
-        
+
         .footer-links li {
             margin-bottom: 10px;
         }
-        
+
         .footer-links a {
             color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
             transition: color 0.3s;
         }
-        
+
         .footer-links a:hover {
             color: white;
         }
-        
+
         .social-icons {
             display: flex;
             gap: 15px;
         }
-        
+
         .social-icons a {
             color: white;
             background: rgba(255, 255, 255, 0.1);
@@ -569,12 +612,12 @@
             justify-content: center;
             transition: all 0.3s ease;
         }
-        
+
         .social-icons a:hover {
             background: var(--primary-color);
             transform: translateY(-3px);
         }
-        
+
         .copyright {
             text-align: center;
             padding-top: 30px;
@@ -582,71 +625,71 @@
             color: rgba(255, 255, 255, 0.5);
             font-size: 0.9rem;
         }
-        
+
         /* Responsive Styles */
         @media (max-width: 992px) {
             h1 {
                 font-size: 2.5rem;
             }
-            
+
             h2 {
                 font-size: 2rem;
             }
         }
-        
+
         @media (max-width: 768px) {
             .header .container {
                 flex-direction: column;
             }
-            
+
             .header nav {
                 margin: 20px 0;
             }
-            
+
             .header button {
                 margin-bottom: 20px;
             }
-            
+
             .pricing-hero {
                 padding: 150px 0 80px;
             }
-            
+
             .pricing-hero h1 {
                 font-size: 2.8rem;
             }
-            
+
             .features-table .feature-name {
                 width: 40%;
             }
         }
-        
+
         @media (max-width: 576px) {
             .header nav ul {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .header nav ul li {
                 margin: 10px 0;
             }
-            
+
             .pricing-hero h1 {
                 font-size: 2.2rem;
             }
-            
+
             .pricing-cta h2 {
                 font-size: 2rem;
             }
-            
+
             .plans-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .features-table {
                 display: block;
                 overflow-x: auto;
             }
-            
+
             .pricing-toggle {
                 flex-direction: column;
                 gap: 15px;
@@ -654,6 +697,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -681,7 +725,8 @@
                     SIMPLE PRICING
                 </span>
                 <h1>Plans That Grow With Your Business</h1>
-                <p>Choose the perfect package for your real estate business needs. No hidden fees, no surprises - just straightforward pricing for exceptional support.</p>
+                <p>Choose the perfect package for your real estate business needs. No hidden fees, no surprises - just
+                    straightforward pricing for exceptional support.</p>
             </div>
         </div>
     </section>
@@ -695,7 +740,8 @@
                     OUR PLANS
                 </span>
                 <h2>Flexible Pricing Options</h2>
-                <p>Select the plan that matches your current needs, with the flexibility to upgrade as your business grows.</p>
+                <p>Select the plan that matches your current needs, with the flexibility to upgrade as your business
+                    grows.</p>
             </div>
 
             <div class="pricing-toggle">
@@ -849,7 +895,8 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>We accept all major credit cards (Visa, Mastercard, American Express, Discover) as well as ACH bank transfers. All payments are processed securely through our payment processor.</p>
+                        <p>We accept all major credit cards (Visa, Mastercard, American Express, Discover) as well as
+                            ACH bank transfers. All payments are processed securely through our payment processor.</p>
                     </div>
                 </div>
 
@@ -860,7 +907,9 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Absolutely! You can upgrade or downgrade your plan at any time. Changes will take effect at the start of your next billing cycle. If you upgrade mid-cycle, we'll prorate the difference.</p>
+                        <p>Absolutely! You can upgrade or downgrade your plan at any time. Changes will take effect at
+                            the start of your next billing cycle. If you upgrade mid-cycle, we'll prorate the
+                            difference.</p>
                     </div>
                 </div>
 
@@ -871,7 +920,9 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>No long-term contracts required. All plans are month-to-month, and you can cancel anytime with 30 days notice. Our annual plan offers a discount but is still cancelable with prorated refund.</p>
+                        <p>No long-term contracts required. All plans are month-to-month, and you can cancel anytime
+                            with 30 days notice. Our annual plan offers a discount but is still cancelable with prorated
+                            refund.</p>
                     </div>
                 </div>
 
@@ -882,7 +933,9 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>If you exceed your monthly transaction limit, we'll automatically charge a small overage fee per additional transaction ($25 for Starter, $20 for Professional). Enterprise plans have no limits.</p>
+                        <p>If you exceed your monthly transaction limit, we'll automatically charge a small overage fee
+                            per additional transaction ($25 for Starter, $20 for Professional). Enterprise plans have no
+                            limits.</p>
                     </div>
                 </div>
 
@@ -893,7 +946,8 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes! We offer special team pricing for brokerages and teams with multiple agents. Contact our sales team for custom pricing based on your team size and needs.</p>
+                        <p>Yes! We offer special team pricing for brokerages and teams with multiple agents. Contact our
+                            sales team for custom pricing based on your team size and needs.</p>
                     </div>
                 </div>
             </div>
@@ -906,7 +960,7 @@
             <div class="cta-content">
                 <h2>Still Have Questions?</h2>
                 <p>Our team is ready to help you choose the perfect plan for your business needs.</p>
-                <button class="hero-button">Contact Our Sales Team</button>
+                <button class="pri-btn">Contact Our Sales Team</button>
             </div>
         </div>
     </section>
@@ -957,13 +1011,13 @@
         const toggle = document.getElementById('billing-toggle');
         const monthlyPrices = [199, 399, 699];
         const annualPrices = [159, 319, 559]; // 20% off
-        
-        toggle.addEventListener('change', function() {
+
+        toggle.addEventListener('change', function () {
             const priceElements = document.querySelectorAll('.plan-price');
             const periodElements = document.querySelectorAll('.plan-price span');
-            
+
             priceElements.forEach((el, index) => {
-                if(this.checked) {
+                if (this.checked) {
                     // Switch to annual pricing
                     el.firstChild.textContent = `$${annualPrices[index]}`;
                     periodElements[index].textContent = '/year';
@@ -976,4 +1030,5 @@
         });
     </script>
 </body>
+
 </html>
