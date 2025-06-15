@@ -2,7 +2,7 @@
   @Author: DASTAN_E_ALAM
   @Date:   2025-04-14 10:05:29
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-06-10 00:41:25
+  @Last Modified time: 2025-06-15 11:25:54
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -151,6 +151,67 @@
             transform: scale(1.05) translateY(-10px);
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
         }
+
+/* Phone view */
+@media only screen and (max-width: 767px) {
+  .about-us {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .about-us .stats {
+    order: -1;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .about-us .stats-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-us .text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-us .main-section-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-us .main-section-title .icon-svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+  }
+
+  .about-us h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-us .features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-us .feat {
+    padding: 1rem;
+  }
+
+  .about-us .feat h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-us .feat p {
+    font-size: 0.9rem;
+  }
+}
+        
     </style>
 </head>
 
@@ -181,7 +242,7 @@
                             <img src="images/heat.svg" class="icon-svg">
                             YOUR REAL ESTATE ALLY
                         </span>
-                        <h2>Real Estate Work Overload? <span>Let Us Handle It!</span></h2>
+                        <h2>Real Estate Work Overload? <br><span>Let Us Handle It!</span></h2>
                         <p>We rescue agents from paperwork chaos, missed deadlines, and "I swear I uploaded that
                             listing!" moments with our tech-driven virtual assistance.</p>
                         <button class="main-button">Book Free Consultation</button>

@@ -2,7 +2,7 @@
   @Author: Dastan Alam
   @Date:   2025-06-01 12:40:21 PM   12:06
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-06-10 00:51:28
+  @Last Modified time: 2025-06-15 11:35:57
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -152,7 +152,7 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background: var(--gradient);
+            /* background: var(--gradient); */
         }
 
         /* Hero Section */
@@ -558,7 +558,153 @@
                 font-size: 2rem;
             }
         }
+
+
+/* Phone view */
+/* Mobile Header (767px and below) */
+/* Mobile Header (767px and below) - Refined Classic Version */
+@media (max-width: 767px) {
+  .header .container {
+    flex-direction: column;
+    padding: 1rem;
+    position: relative; /* For absolute positioning */
+  }
+
+  /* Logo */
+  .header .container > img {
+    /* width: 140px;
+    margin-bottom: 1rem; */
+  }
+
+  /* Navigation - initially hidden */
+  .header nav {
+    width: 100%;
+    display: none;
+    margin: 1rem 0;
+  }
+
+  /* Expanded navigation */
+  .header .container.menu-open nav {
+    display: block;
+  }
+
+  /* Navigation list */
+  .header nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .header nav ul li {
+    width: 100%;
+  }
+
+  .header nav ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  /* Active state */
+  .header nav ul li a.active {
+    border-left: 3px solid green;
+    padding-left: 0.75rem;
+    font-weight: bold;
+  }
+
+  /* Hamburger toggle */
+  .header .menu-toggle {
+    position: absolute;
+    top: 1.25rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Completely remove Get Started button */
+  .header .container > button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-us {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .about-us .stats {
+    order: -1;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .about-us .stats-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-us .text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-us .main-section-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-us .main-section-title .icon-svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+  }
+
+  .about-us h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-us .features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-us .feat {
+    padding: 1rem;
+  }
+
+  .about-us .feat h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-us .feat p {
+    font-size: 0.9rem;
+  }
+}
     </style>
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const container = document.querySelector('.header .container');
+  const toggle = document.createElement('div');
+  toggle.className = 'menu-toggle';
+  toggle.innerHTML = '☰';
+  container.appendChild(toggle);
+
+  toggle.addEventListener('click', function() {
+    container.classList.toggle('menu-open');
+  });
+});
+</script>
 </head>
 
 <body>
